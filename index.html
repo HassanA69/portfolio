@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hassan Abdelnaby - .NET Backend Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Animated Tech Cover -->
+    <div class="tech-cover" id="techCover">
+      <div class="tech-particles"></div>
+      <div class="code-elements">
+        <span class="code-element" data-delay="0">C#</span>
+        <span class="code-element" data-delay="200">.NET</span>
+        <span class="code-element" data-delay="400">API</span>
+        <span class="code-element" data-delay="600">SQL</span>
+        <span class="code-element" data-delay="800">{}</span>
+        <span class="code-element" data-delay="1000">[]</span>
+        <span class="code-element" data-delay="1200">async</span>
+        <span class="code-element" data-delay="1400">await</span>
+        <span class="code-element" data-delay="1600">=></span>
+        <span class="code-element" data-delay="1800">class</span>
+        <span class="code-element" data-delay="2000">public</span>
+        <span class="code-element" data-delay="2200">private</span>
+      </div>
+      <div class="geometric-shapes">
+        <div class="shape shape--circle"></div>
+        <div class="shape shape--square"></div>
+        <div class="shape shape--triangle"></div>
+        <div class="shape shape--hexagon"></div>
+      </div>
+      <canvas class="binary-rain" id="binaryCanvas"></canvas>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+      <nav class="nav container">
+        <div class="nav__brand">
+          <h2>Hassan Abdelnaby</h2>
+        </div>
+        <ul class="nav__menu">
+          <li><a href="#home" class="nav__link">Home</a></li>
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#skills" class="nav__link">Skills</a></li>
+          <li><a href="#projects" class="nav__link">Projects</a></li>
+          
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+        <div class="nav__actions">
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle theme"
+          >
+            <span class="theme-toggle__icon">🌙</span>
+          </button>
+          <a href="#contact" class="btn btn--primary btn--sm">Contact Me</a>
+        </div>
+        <button class="nav__toggle" id="navToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <div class="container">
+          <div class="hero__content">
+            <div class="hero__text">
+              <h1 class="hero__title">Hassan Abdelnaby</h1>
+              <h2 class="hero__subtitle">.NET Backend Developer</h2>
+              <p class="hero__tagline">
+                Building scalable, secure, and efficient backend solutions
+              </p>
+              <div class="hero__actions">
+                <a href="#projects" class="btn btn--primary">View Projects</a>
+                <a href="#contact" class="btn btn--outline">Contact Me</a>
+              </div>
+            </div>
+            <div class="hero__image">
+              <img
+                src="/Hassan.jpg"
+                alt="Hassan Abdelnaby - .NET Backend Developer"
+                class="hero__photo"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bio Section -->
+      <section id="about" class="bio">
+        <div class="container">
+          <div class="section-header">
+            <h2>About Me</h2>
+            <p>Get to know my background and expertise</p>
+          </div>
+          <div class="bio__content">
+            <p>
+              I’m a backend developer who enjoys working with .NET, C#, and
+              SQL Server to build applications that are secure, reliable, and
+              scalable. I have a solid foundation in database design, API
+              development, and backend optimization, and I’m always eager to
+              learn and improve.
+            </p>
+
+            <p>
+              I’m passionate about problem-solving and writing clean,
+              maintainable code. With hands-on experience using Entity Framework
+              Core, LINQ, and modern development practices, I focus on creating
+              software solutions that actually help people and businesses work
+              more efficiently.
+            </p>
+           
+          </div>
+        </div>
+      </section>
+
+      <!-- Value Proposition Section -->
+      <section id="value" class="value-props">
+        <div class="container">
+          <div class="section-header">
+            <h2>Why Choose Me?</h2>
+            <p>The unique value I bring to your projects</p>
+          </div>
+          <div class="value-props__grid">
+            <div class="value-prop">
+              <div class="value-prop__icon">🏗️</div>
+              <h3 class="value-prop__title">Scalable Architecture</h3>
+              <p class="value-prop__description">
+                Building a solid foundation in microservices and clean
+                architecture patterns, with a focus on creating applications
+                that are reliable, maintainable, and able to grow with business
+                needs.
+              </p>
+            </div>
+            <div class="value-prop">
+              <div class="value-prop__icon">⚡</div>
+              <h3 class="value-prop__title">Performance Optimization</h3>
+              <p class="value-prop__description">
+                Focused on writing efficient and optimized code, improving query
+                performance, and applying best practices to ensure faster and
+                more responsive applications.
+              </p>
+            </div>
+            <div class="value-prop">
+              <div class="value-prop__icon">☁️</div>
+              <h3 class="value-prop__title">Cloud-Native Solutions</h3>
+              <p class="value-prop__description">
+                Currently building my skills in cloud-native development. I’m
+                learning how to use containerization, orchestration, and CI/CD
+                pipelines to make applications more scalable and easier to
+                manage.
+              </p>
+            </div>
+            <div class="value-prop">
+              <div class="value-prop__icon">✅</div>
+              <h3 class="value-prop__title">Reliable Delivery</h3>
+              <p class="value-prop__description">
+                Committed to delivering projects on time with a focus on clean
+                code, proper testing, and clear documentation to ensure
+                long-term maintainability.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Technical Skills Section -->
+      <section id="skills" class="skills">
+        <div class="container">
+          <div class="section-header">
+            <h2>Technical Skills</h2>
+            <p>Technologies and concepts I work with</p>
+          </div>
+
+          <div class="skills__categories">
+            <!-- Programming Languages -->
+            <div class="skill-category">
+              <h3>Programming Languages</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">C#</span>
+                <span class="skill-tag">SQL</span>
+              </div>
+            </div>
+
+            <!-- Frameworks & Libraries -->
+            <div class="skill-category">
+              <h3>Frameworks & Libraries</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">ASP.NET Core</span>
+                <span class="skill-tag">Entity Framework Core</span>
+                <span class="skill-tag">LINQ</span>
+              </div>
+            </div>
+
+            <!-- Databases -->
+            <div class="skill-category">
+              <h3>Databases</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">SQL Server</span>
+                <span class="skill-tag">MySQL</span>
+              </div>
+            </div>
+
+            <!-- Core Computer Science Skills -->
+            <div class="skill-category">
+              <h3>Core Computer Science Skills</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">Object-Oriented Programming (OOP)</span>
+                <span class="skill-tag">Data Structures & Algorithms</span>
+                <span class="skill-tag">Problem Solving</span>
+                <span class="skill-tag">SOLID Principles</span>
+                <span class="skill-tag">Design Patterns</span>
+              </div>
+            </div>
+
+            <!-- Tools & Technologies -->
+            <div class="skill-category">
+              <h3>Tools & Technologies</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">Visual Studio</span>
+                <span class="skill-tag">Git & GitHub</span>
+                <span class="skill-tag"
+                  >SQL Server Management Studio (SSMS)</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Projects Section -->
+      <section id="projects" class="projects">
+        <div class="container">
+          <div class="section-header">
+            <h2>Featured Projects</h2>
+            <p>Some of my notable work and achievements</p>
+          </div>
+          <div class="projects__grid">
+            <div class="project-card">
+              <div class="project-card__content">
+                <h3 class="project-card__title">
+                  Headphone Store
+                </h3>
+                <p class="project-card__description">
+                 Responsive e-commerce website with modern UI/UX and interactive features
+                </p>
+                <div class="project-card__tech">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">PHP</span>
+                  <span class="tech-tag">SQL Server</span>
+                  
+                </div>
+                <ul class="project-card__features">
+                  <li> Fully responsive design</li>
+                  <li>Intuitive shopping experience</li>
+                  <li>Interactive product showcase</li>
+                   
+                </ul>
+                <div class="project-card__actions">
+                  <a
+                    href="https://github.com/HassanA69/Headphone-store"
+                    class="btn btn--primary btn--sm"
+                    target="_blank"
+                    >View on GitHub</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-card__content">
+                <h3 class="project-card__title">
+                  Management System
+                </h3>
+                <p class="project-card__description">
+                  Secure user authentication and management system with admin dashboard
+                </p>
+                <div class="project-card__tech">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">PHP</span>
+                  <span class="tech-tag">SQL Server</span>
+                </div>
+                <ul class="project-card__features">
+                  <li>User registration & login</li>
+                  <li>Admin panel for user management</li>
+                  <li>Database integration with secure practices</li>
+                  
+                </ul>
+                <div class="project-card__actions">
+                  <a
+                    href="https://github.com/HassanA69/Login_app_PHP"
+                    class="btn btn--primary btn--sm"
+                    target="_blank"
+                    >View on GitHub</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-card__content">
+                <h3 class="project-card__title">
+                  Articles Management System
+                </h3>
+                <p class="project-card__description">
+                  Lightweight CMS for article creation, modification, and deletion
+                </p>
+                <div class="project-card__tech">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">PHP</span>
+                  <span class="tech-tag">SQL Server</span>
+                  <span class="tech-tag">Bootstrap</span>
+                  <span class="tech-tag">XAMP</span>
+                </div>
+                <ul class="project-card__features">
+                  <li>CRUD operations for articles</li>
+                  <li>Secure PDO-based database connection</li>
+                  <li>User-friendly backend interface</li>
+                
+                </ul>
+                <div class="project-card__actions">
+                  <a
+                    href="https://github.com/HassanA69/cms_pdo"
+                    class="btn btn--primary btn--sm"
+                    target="_blank"
+                    >View on GitHub</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-card__content">
+                <h3 class="project-card__title">
+                  To-Do List App
+                </h3>
+                <p class="project-card__description">
+                  Lightweight task management app with simple and intuitive features
+                </p>
+                <div class="project-card__tech">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">PHP</span>
+                  <span class="tech-tag">SQL Server</span>
+                </div>
+                <ul class="project-card__features">
+                  <li>Add new tasks easily</li>
+                  <li>Mark tasks as completed</li>
+                  <li>Delete tasks when no longer needed</li>
+                  
+                </ul>
+                <div class="project-card__actions">
+                  <a
+                    href="https://github.com/HassanA69/Todo_PHP"
+                    class="btn btn--primary btn--sm"
+                    target="_blank"
+                    >View on GitHub</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="section-header">
+            <h2>Get In Touch</h2>
+            <p>Let's discuss your next project</p>
+          </div>
+          <div class="contact__content">
+            <div class="contact__info">
+              <h3>Contact Information</h3>
+              <div class="contact-item">
+                <strong>Email:</strong>
+                <a href="mailto:hassan.abdelnaby69@email.com"
+                  >hassan.abdelnaby69@email.com</a
+                >
+              </div>
+              <div class="contact-item">
+                <strong>Phone:</strong>
+                <a href="tel:+201033140374">+20 103 314 0374</a>
+              </div>
+              <div class="contact-item">
+                <strong>Location:</strong>
+                <span>Assiut</span>
+              </div>
+              <div class="contact-item">
+                <strong>LinkedIn:</strong>
+                <a 
+                  href="https://www.linkedin.com/in/hassan-abdelnaby-"
+                  target="_blank"
+                >
+                  linkedin.com/in/hassan-abdelnaby-
+                </a>
+              </div>
+              <div class="contact-item">
+                <strong>GitHub:</strong>
+                <a href="https://github.com/HassanA69" target="_blank"
+                  >github.com/HassanA69</a
+                >
+              </div>
+            </div>
+            <div class="contact__form">
+              <form id="contactForm">
+                <div class="form-group">
+                  <label for="name" class="form-label">Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="form-control"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-control"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    class="form-control"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn--primary btn--full-width">
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Hassan Abdelnaby. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
